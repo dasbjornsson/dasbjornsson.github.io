@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript" src="rand.js"></script>
+        <title>Login page</title>
     </head>
     <body>
-        <input type="button" onclick="go()" value="Display JS Array"/>       
+        <h1>Simple Login Page</h1>
+        <form name="login">
+            
+            Password<input type="password" name="pswrd"/>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+            
+        </form>
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.pswrd.value != "mypswrd") {
+                    window.open('www.dthor.me/' + hashCode(form.pswrd.value) + '.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        
+
+            hashCode = function(str){
+            var hash = 0;
+            if (str.length == 0) return hash;
+            for (i = 0; i < str.length; i++) {
+                 char = str.charCodeAt(i);
+                 hash = ((hash<<5)-hash)+char;
+                 hash = hash & hash; // Convert to 32bit integer
+             }
+            return hash;
+            }
+            </script>
     </body>
 </html>
-<!--
-<html lang="en">
-<head>
-
-  <script src="rand.js"></script>
-    
-
-</head>
-
-<body>
-<CENTER>
-<FORM>
-<input type="button" value="Enter Protected Area" onClick="passWord()">
-</FORM>
-</CENTER>
-   </body>
-</html>-->
