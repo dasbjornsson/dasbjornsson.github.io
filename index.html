@@ -7,15 +7,23 @@
         <h1>dthor.me Login</h1>
         <form name="login">
             
-            Password<input type="password" name="pswrd"/>
-            <input type="button" onclick="check(this.form)" value="Login"/>
+            Password: <input type="password" name="pswrd"/>
+            <!--<input type="password" onkeyup="if(event.keyCode==13) check(this.form);" name="pswrd">-->
+            <input type="submit" onclick="check(this.form)" value="Login"/>
             
+
         </form>
+
         <script language="javascript">
             function check(form) { /*function to check userid & password*/
                 /*the following code checkes whether the entered userid and password are matching*/
                 if(form.pswrd.value != "mypswrd") {
                     window.open(hashCode(form.pswrd.value) + ".html")/*opens the target page while Id & password matches*/
+                    //change to this for online version so page will open in same tab:
+                    //window.open("www.dthor.me/" + hashCode(form.pswrd.value) + ".html","_self");
+                    
+                                        
+
                 }
                 else {
                     alert("Error Password or Username")/*displays error message*/
