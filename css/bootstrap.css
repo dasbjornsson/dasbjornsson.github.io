@@ -234,6 +234,12 @@ th {
     orphans: 3;
     widows: 3;
   }
+  h1 {
+    color: #3367FF;
+    background: #3367FF;
+  }
+  
+
   h2,
   h3 {
     page-break-after: avoid;
