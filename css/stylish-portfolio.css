@@ -20,6 +20,7 @@ body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    font-size-adjust: middle;
 }
 
 .text-vertical-center h1 {
@@ -28,6 +29,8 @@ body {
     font-size: 4.5em;
     font-weight: 700;
     color: #3367FF;
+
+
 }
 
 /* Custom Button Styles */
