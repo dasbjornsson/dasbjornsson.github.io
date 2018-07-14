@@ -6,6 +6,7 @@
         html {
             height: 100%;
             overflow-x: hidden;
+            font-family: "Courier New", Courier, monospace;
         }
 
         body {
@@ -20,20 +21,27 @@
         }
 
         .my-header {
-            background: white;
-            color: black;
+            background: black;
+            color: aquamarine;
             top: 0;
             position: relative;
             width: 100%;
-            height: 50vh;
+            height: 30vh;
             /* padding: 10px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 25px solid aquamarine;
+            border-bottom: 25px solid aquamarine;
         }
 
         .my-logo {
-            display: table;
-            margin: auto;
-            padding: 25vh;
-            font-size: 50px;
+            /* display: flex; */
+            /* margin: auto; */
+            /* padding: 25vh; */
+            font-size: 5vh;
+            /* align-items: center;
+            justify-content: center; */
         }
 
         .navbar {
@@ -41,10 +49,10 @@
             bottom: 0;
             height: 60px;
             background: aquamarine;
-            box-shadow:
-		0px 1px 1px rgba(000,000,000,0.5),
-		inset 1px 2px 0px rgba(255,255,255,0.4);
-            padding: 8px;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .my-main {
@@ -52,11 +60,11 @@
             height: 1000px;
             width: 100%;
             position: relative;
-            
+
         }
 
         .my-footer {
-            background: white;
+            background: aquamarine;
             bottom: 0;
             position: relative;
             width: 100%;
@@ -71,28 +79,41 @@
         }
 
         .my-button {
-            width: 32vw;
-            height: 60px;
+            width: 33%;
+            height: 100%;
             background: none;
-            border: none;
+            border: 1px solid black;
+            margin-right: 1vw;
+            margin-left: 1vw;
+        }
+
+        .my-menu-icon {
+            background: aquamarine;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            height: 25px;
+            width: 6vw;
+            color: black;
         }
     </style>
-    <title>>|></title>
+    <title>> |> ʌ</title>
 </head>
 
 <body>
+    <div class="my-menu-icon">
+        MENU
+    </div>
     <div class="my-header">
         <div class="my-logo">
-            >|>
+            <h1>>_|>_ʌ</h1>
         </div>
     </div>
-    <div class="navbar">
-        <button class="my-button">Home</button>
-        <button class="my-button">Projects</button>
-        <button class="my-button">Resume</button>
-    </div>
+    <!-- <div class="navbar">
+    </div> -->
     <div class="my-main">
-        
+
     </div>
     <div class="my-footer">
         <!-- This is the footer -->
